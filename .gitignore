@@ -1,0 +1,4 @@
+*.pyc
+uwsgi.ini
+settings.cfg
+*~
