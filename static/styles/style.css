@@ -1,4 +1,4 @@
-body {
+body {    
     margin: 0px;
     font-family: open sans;
 }
@@ -26,11 +26,12 @@ body {
     width: 17em;
     text-shadow: 1px 1px 6px #000;
     position: relative;
-    top: 175px;
+    top: 200px;
     left: 50px;
     background-color: rgba(0, 0, 0, 0.4);
     padding: .2em;
     font-size: 2.5em;
+    //font-family: 'Josefin Slab', serif;
 }
 
 ul.rightmenu  {
@@ -94,7 +95,7 @@ button:hover {
 
 section h2 {
     font-weight: normal;
-    font-size: 1.6em;
+    font-size: 2em;
     text-align: center;
 }
 
@@ -128,7 +129,7 @@ footer p {
     margin: 0px;
     padding: 5px;
     color: #fff;
-    font-size: .8em;
+    font-size: 1em;
 }
 
 footer p a {
