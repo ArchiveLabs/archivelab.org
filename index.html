@@ -21,7 +21,7 @@
     <header class="topheader" style="position: absolute;">
       <ul class="rightmenu">
         <li><a href="https://blog.archive.org/2013/07/04/how-to-use-the-virtual-machine-for-researchers">Research</a></li>
-	<li><a href="https://experiments.archivelab.org">Experiments</a></li>
+	<li><a href="https://experiments.archivelab.org" id="experiments-link">Experiments</a></li>
         <li><a href="https://github.com/ArchiveLabs">Github</a></li>
         <li><a href="https://developers.archive.org">APIs &amp; Docs</a></li>
         <li><a href="https://docs.google.com/forms/d/1wYcjH5GPbW2YkiXW3Xpc3BbyiWduMU4VzvZqVH2JaFI/viewform?usp=send_form">
@@ -66,6 +66,13 @@
       e.src='//www.google-analytics.com/analytics.js';
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
       ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+
+      const { protocol, hostname } = window.location;
+      const parts = hostname.split('.');
+      const domain = parts.slice(-2).join('.');
+      console.log(domain);
+      const url = `${protocol}//experiments.${domain}`;
+      document.getElementById('experiments-link').href = url;
     </script>
   </body>
 </html>
